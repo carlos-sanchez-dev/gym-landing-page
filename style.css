@@ -66,13 +66,6 @@ section {
   background: #334155;
 }
 
-.video video {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 12px;
-  margin-top: 20px;
-}
-
 .cta {
 margin-top: 40px;
 }
@@ -92,8 +85,14 @@ margin: 10px 0;
   border-radius: 20px;
 }
 
-.screens {
-margin-top: 60px;
+.screen {
+  text-align: center;
+}
+
+.screen p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #cbd5f5;
 }
 
 .screens .sub {
@@ -114,8 +113,8 @@ border-radius: 12px;
 transition: 0.2s;
 }
 
-.screens-grid img {
-transform: scale(1.05);
+.screens-grid img:hover {
+  transform: scale(1.05);
 }
 
 .cta-text {
