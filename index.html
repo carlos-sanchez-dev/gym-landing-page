@@ -42,17 +42,17 @@
   <div class="screens-grid">
 
   <div class="screen">
-    <img src="assets/img/socios.png" alt="Gestión de socios">
+    <img src="assets/img/socios.png" onclick="openModal(this.src)">
     <p>Visualizá socios vencidos y evitá pérdidas</p>
   </div>
 
   <div class="screen">
-    <img src="assets/img/pagos.png" alt="Control de pagos">
-    <p>Control total de pagos y vencimientos</p>
+    <img src="assets/img/pagos.png" onclick="openModal(this.src)">
+    <p>Analizá ingresos y detectá pérdidas fácilmente</p>
   </div>
 
   <div class="screen">
-    <img src="assets/img/recepcion.png" alt="Movimientos">
+    <img src="assets/img/recepcion.png" onclick="openModal(this.src)">
     <p>Buscá socios en segundos en recepción</p>
   </div>
 
@@ -88,5 +88,22 @@
   <p>Respondemos en menos de 24 hs</p>
 </footer>
 
+<div id="modal" class="modal" onclick="closeModal()">
+  <img id="modal-img">
+</div>
+
 </body>
 </html>
+
+<script>
+function openModal(src) {
+  const modal = document.getElementById("modal");
+  const img = document.getElementById("modal-img");
+  modal.style.display = "flex";
+  img.src = src;
+}
+
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
+</script>
