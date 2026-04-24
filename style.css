@@ -92,7 +92,33 @@ margin: 10px 0;
   border-radius: 20px;
 }
 
-.cta {
-  background: linear-gradient(135deg, #1e293b, #020617);
-  border-radius: 20px;
+.screens {
+margin-top: 60px;
+}
+
+.screens .sub {
+color: #cbd5f5;
+margin-bottom: 30px;
+}
+
+.screens-grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+}
+
+.screens-grid img {
+width: 300px;
+border-radius: 12px;
+transition: 0.2s;
+}
+
+.screens-grid img {
+transform: scale(1.05);
+}
+
+.cta-text {
+margin-top: 30px;
+font-size: 1.1rem;
 }
